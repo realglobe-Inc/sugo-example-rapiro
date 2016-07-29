@@ -1,0 +1,41 @@
+.rapiro-command-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0;
+  min-width: 192px; }
+  .rapiro-command-form .ap-text-wrap {
+    margin: 0; }
+  .rapiro-command-form .ap-text {
+    border-radius: 8px 0 0 8px;
+    resize: none;
+    height: 36px; }
+  .rapiro-command-form .ap-button {
+    margin: 0;
+    padding: 5px 8px;
+    border-radius: 0 8px 8px 0; }
+
+.rapiro-preset-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+  .rapiro-preset-form .rapiro-preset-button {
+    font-size: small;
+    border-radius: 50%;
+    width: 92px;
+    height: 92px;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    white-space: inherit;
+    align-items: center; }
+
+.rapiro-form-legend {
+  display: block;
+  font-size: 14px;
+  border-bottom: 1px solid #F0F0F0;
+  margin-top: 24px;
+  color: #888; }
+
+/*# sourceMappingURL=rapiro.css.map */

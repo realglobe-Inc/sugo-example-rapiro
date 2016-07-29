@@ -1,0 +1,90 @@
+{
+  "name": "sugo-example-rapiro",
+  "version": "1.0.0",
+  "description": "SUGOS example project to contorl RAPIRO.",
+  "main": "lib",
+  "bin": {
+    "sugo-example-rapiro": "./bin/cli.js"
+  },
+  "scripts": {
+    "actor": "./bin/actor.js",
+    "caller": "./bin/caller.js",
+    "cloud": "./bin/cloud.js",
+    "debug": "./ci/watch.js & DEBUG=sg:* ./bin/cloud.js",
+    "prepublish": "./ci/build.js",
+    "start": "./bin/cloud.js",
+    "test": "./ci/test.js",
+    "ui": "./bin/ui.js"
+  },
+  "repository": "realglobe-Inc/sugo-example-rapiro",
+  "keywords": [
+    "SUGOS",
+    "example"
+  ],
+  "author": {
+    "name": "Taka Okunishi",
+    "email": "okunishitaka.com@gmail.com",
+    "url": "http://okunishitaka.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/realglobe-Inc/sugo-example-rapiro/issues"
+  },
+  "homepage": "https://github.com/realglobe-Inc/sugo-example-rapiro#readme",
+  "dependencies": {
+    "aglob": "^1.0.1",
+    "apeman-asset-javascripts": "^5.0.5",
+    "apeman-react-basic": "^9.0.6",
+    "apeman-react-icon": "^4.0.0",
+    "apemancolor": "^1.2.1",
+    "aport": "^1.0.0",
+    "arequest": "^2.0.6",
+    "asleep": "^1.0.3",
+    "babel-polyfill": "^6.9.1",
+    "classnames": "^2.2.5",
+    "co": "^4.6.0",
+    "colorprint": "^4.0.5",
+    "commander": "^2.9.0",
+    "debug": "^2.2.0",
+    "defaults": "^1.0.3",
+    "execcli": "^4.0.6",
+    "open": "0.0.5",
+    "pudding": "^4.0.1",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "sg-react": "^1.0.11",
+    "sg-react-components": "^1.3.3",
+    "sugo-actor": "^4.0.1",
+    "sugo-agent-compile": "^1.0.10",
+    "sugo-agent-file": "^1.0.7",
+    "sugo-caller": "^2.1.5",
+    "sugo-cloud": "^2.0.6",
+    "sugo-endpoint-compile": "^2.0.7",
+    "sugo-endpoint-file": "^1.0.7",
+    "sugo-module-noop": "^4.0.3",
+    "sugo-module-rapiro": "^2.0.2",
+    "sugo-observer": "^2.0.1",
+    "sugo-react-example": "^2.0.11"
+  },
+  "devDependencies": {
+    "ababel": "^1.0.25",
+    "ababel-es2015": "^1.0.5",
+    "ababel-react": "^1.0.5",
+    "amocha": "^1.0.9",
+    "ape-tmpl": "^5.0.12",
+    "ape-updating": "^4.0.4",
+    "coz": "^6.0.5",
+    "injectmock": "^2.0.0",
+    "node-sass": "^3.8.0",
+    "sg-travis": "^1.1.25",
+    "sugo-ci-example": "^3.0.2",
+    "sugos-assets": "^2.0.1"
+  },
+  "engines": {
+    "node": ">=6.x",
+    "npm": ">=3.x"
+  },
+  "publishConfig": {
+    "registry": "https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-local"
+  }
+}
