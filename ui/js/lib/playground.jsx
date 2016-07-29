@@ -121,7 +121,7 @@ const Playground = React.createClass({
             <div className='playground-row'>
               <ApContainer>
                 <div className='playground-item'>
-                  <h5 className='rapiro-form-legend'>Prset</h5>
+                  <h5 className='rapiro-form-legend'>Preset</h5>
                   <ApForm className='rapiro-preset-form'
                           spinning={ state.presetSending }
                   >
