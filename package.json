@@ -1,6 +1,6 @@
 {
   "name": "sugo-example-rapiro",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "SUGOS example project to contorl RAPIRO.",
   "main": "lib",
   "bin": {
