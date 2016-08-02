@@ -77,7 +77,7 @@ const Playground = React.createClass({
         <ApSelectableArticle
           options={ (actors || []).reduce((options, actor) => Object.assign(options, { [actor.key]: actor.key }), {}) }
           name='actorKey'
-          label='Spot: '
+          label='Actor: '
           alt='No actor found! You need to connect one before playing'
           value={ actorKey }
           onChange={ (e) => s.setState({ actorKey: e.target.value }) }
