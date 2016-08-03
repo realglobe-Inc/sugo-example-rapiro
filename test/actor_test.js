@@ -5,7 +5,7 @@
 'use strict'
 
 const actor = require('../lib/actor.js')
-const cloud = require('../lib/cloud.js')
+const hub = require('../lib/hub.js')
 const assert = require('assert')
 const filedel = require('filedel')
 const co = require('co')
@@ -28,11 +28,11 @@ describe('actor', () => {
   }))
 
   it('Spot', () => co(function * () {
-    let cloudInstance = yield cloud()
+    let hubInstance = yield hub()
     let actorInstance = yield actor()
     yield asleep(300)
     yield actorInstance.disconnect()
-    yield cloudInstance.close()
+    yield hubInstance.close()
   }))
 })
 

@@ -1,10 +1,10 @@
 /**
- * Test case for cloud.
+ * Test case for hub.
  * Runs with mocha.
  */
 'use strict'
 
-const cloud = require('../lib/cloud.js')
+const hub = require('../lib/hub.js')
 const assert = require('assert')
 const co = require('co')
 const injectmock = require('injectmock')
@@ -13,12 +13,12 @@ const asleep = require('asleep')
 const arequest = require('arequest')
 const filedel = require('filedel')
 
-describe('cloud', () => {
+describe('hub', () => {
   let request = arequest.create({ jar: true })
   let port
   before(() => co(function * () {
     port = yield aport()
-    let storage = `${__dirname}/../tmp/testing-cloud/**/*.json`
+    let storage = `${__dirname}/../tmp/testing-hub/**/*.json`
     yield filedel(storage)
     injectmock(process.env, 'STORAGE', storage)
     injectmock(process.env, 'PORT', port)
@@ -29,8 +29,8 @@ describe('cloud', () => {
     yield asleep(10)
   }))
 
-  it('Cloud', () => co(function * () {
-    let instance = yield cloud()
+  it('Hub', () => co(function * () {
+    let instance = yield hub()
     yield asleep(300)
 
     {

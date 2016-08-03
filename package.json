@@ -9,10 +9,10 @@
   "scripts": {
     "actor": "./bin/actor.js",
     "caller": "./bin/caller.js",
-    "cloud": "./bin/cloud.js",
-    "debug": "./ci/watch.js & DEBUG=sg:* ./bin/cloud.js",
+    "hub": "./bin/hub.js",
+    "debug": "./ci/watch.js & DEBUG=sg:* ./bin/hub.js",
     "prepublish": "./ci/build.js",
-    "start": "./bin/cloud.js",
+    "start": "./bin/hub.js",
     "test": "./ci/test.js",
     "ui": "./bin/ui.js"
   },
@@ -58,7 +58,7 @@
     "sugo-agent-compile": "^1.0.10",
     "sugo-agent-file": "^1.0.7",
     "sugo-caller": "^2.1.5",
-    "sugo-cloud": "^2.0.6",
+    "sugo-hub": "^2.0.6",
     "sugo-endpoint-compile": "^2.0.7",
     "sugo-endpoint-file": "^1.0.7",
     "sugo-module-noop": "^4.0.3",
