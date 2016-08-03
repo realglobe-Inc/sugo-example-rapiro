@@ -18,8 +18,8 @@ describe('hub', () => {
   let port
   before(() => co(function * () {
     port = yield aport()
-    let storage = `${__dirname}/../tmp/testing-hub/**/*.json`
-    yield filedel(storage)
+    let storage = `${__dirname}/../tmp/testing-hub`
+    yield filedel(`${storage}/**/*.json`)
     injectmock(process.env, 'STORAGE', storage)
     injectmock(process.env, 'PORT', port)
   }))
