@@ -232,20 +232,15 @@ const Playground = React.createClass({
       let { actorKey } = s.state
       // Set up
       let actor = yield caller.connect(actorKey)
-
       let rapiro = actor.get('rapiro')
-
-      let usb = (yield rapiro.list()).filter((item) => /usbserial/.test(item.comName))[ 0 ]
-      if (!usb) {
-        alert('Rapiro not Connected!')
-        return
-      }
-
       let isOpen = yield rapiro.isOpen()
       if (!isOpen) {
-        yield rapiro.connect(usb.comName, {
-          baudRate: 57600
-        })
+        try {
+          yield rapiro.autoConnect()
+        } catch (err) {
+          console.error(err)
+          alert('Rapiro not found!')
+        }
       }
 
       yield rapiro.color({
