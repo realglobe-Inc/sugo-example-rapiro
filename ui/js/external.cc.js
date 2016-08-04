@@ -1,1 +1,1 @@
-../../node_modules/sugo-ci-example/node_modules/apeman-asset-javascripts/dist/default.external.cc.js
+../../node_modules/apeman-asset-javascripts/dist/default.external.cc.js

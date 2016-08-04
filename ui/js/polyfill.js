@@ -1,1 +1,1 @@
-../../node_modules/sugo-ci-example/node_modules/babel-polyfill/dist/polyfill.js
+../../node_modules/babel-polyfill/dist/polyfill.js
