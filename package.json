@@ -64,9 +64,7 @@
     "sugo-module-noop": "^4.0.3",
     "sugo-module-rapiro": "^2.0.3",
     "sugo-observer": "^2.0.1",
-    "sugo-react-example": "^2.0.14"
-  },
-  "devDependencies": {
+    "sugo-react-example": "^2.0.14",
     "ababel": "^1.0.25",
     "ababel-es2015": "^1.0.5",
     "ababel-react": "^1.0.5",
@@ -75,7 +73,7 @@
     "ape-updating": "^4.0.5",
     "coz": "^6.0.17",
     "injectmock": "^2.0.0",
-    "node-sass": "^3.8.0",
+    "node-sass": "*",
     "sg-travis": "^1.1.29",
     "sugo-ci-example": "^3.0.4",
     "sugos-assets": "^2.0.1"

@@ -31,8 +31,9 @@ node_modules
 tmp
 
 
-.npmrc
 .DS_Store
 
 shim/browser
 shim/package.json
+
+.npmrc.bk
